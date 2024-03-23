@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style4.css" />
+    <title>Document</title>
+  </head>
+  <body style="align-items: center">
+    <div class="wrapper">
+      <h1>Color Changer</h1>
+      <div class="color-boxes">
+        <button class="box-1" id="grey"></button>
+        <button class="box-2" id="green"></button>
+        <button class="box-3" id="yellow"></button>
+        <button class="box-4" id="blue"></button>
+      </div>
+    </div>
+    <script>
+      (function () {
+        const btn = document.querySelectorAll("button");
+
+        btn.forEach((e, i) => {
+          e.addEventListener("click", () => {
+            if (e.id === "grey") {
+              document.body.style.background = e.id;
+            } else if (e.id === "green") {
+                document.body.style.background = e.id;
+            } else if (e.id === "yellow") {
+                document.body.style.background = e.id;
+            } else if (e.id === "blue") {
+                document.body.style.background = e.id;
+            }
+          });
+        });
+      })();
+    </script>
+  </body>
+</html>
